@@ -4,14 +4,13 @@
     margin: auto;
 }
 .section1{
-    background-color: aquamarine;
     width: 235px;
+    display: grid;
+    grid-column: auto;
 }
 .section2{
-    background-color: blue;
 width: 600px;
 }
 .section3{
-    background-color: blueviolet;
     width: 400px;
 }
