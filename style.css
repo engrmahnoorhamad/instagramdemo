@@ -43,13 +43,23 @@ width: 500px;
 }
 
 /* profile pic and container styling  */
-.profile-pic img {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    object-fit: cover;
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; 
     border: 1px solid #dbdbdb;
+    overflow: hidden;   
+    display: flex;     
+    align-items: center;
+    justify-content: center;
 }
+
+.profile img {
+    width: 100%;        
+    height: 100%;       
+    object-fit: cover; 
+}
+
 
 
 .text-info {
@@ -118,4 +128,76 @@ width: 500px;
 .copyright {
     text-transform: uppercase;
     letter-spacing: 0.2px;
+}
+
+.posts-section {
+    width: 500px; /* Or whatever width your main feed is */
+    margin: 0 auto;
+}
+
+.stories-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Allows horizontal scrolling */
+    overflow-x: auto; 
+    /* Keeps all items in one long line */
+    flex-wrap: nowrap; 
+    padding: 10px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    
+   
+}
+
+
+
+.story-outer {
+    background: linear-gradient(to right, #fffb00, #ff9900, #c300ff, #ff0202);
+    border-radius: 50%;
+    margin-right: 15px;
+    height: 74px;
+    width: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    /* CRITICAL: Prevents the circle from shrinking to fit the screen */
+    flex-shrink: 0; 
+    cursor: pointer;
+}
+
+.story-inner {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white; 
+}
+
+.story-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+.user-info-post {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    gap: 12px;          
+    margin-bottom: 10px; 
+}
+
+.profile-pic img {
+    width: 40px;         
+    height: 40px;
+    border-radius: 50%;  
+    object-fit: cover;
+}
+
+.post img {
+    width: 400px;
+    height: auto;
+    border-radius: 8px;  /* Optional: adds nice rounded corners to the post */
 }
